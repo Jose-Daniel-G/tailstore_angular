@@ -1,0 +1,49 @@
+<nav class="bg-indigo-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-xl font-bold">MiMarca</a>
+            </div>
+
+            <!-- Menú escritorio -->
+            <div class="hidden md:flex space-x-6">
+                <a routerLink="/auth/login" class="hover:text-indigo-200">Join</a>
+                <a routerLink="/auth/register" class="hover:text-indigo-200">Register</a>
+                <!-- <a href="#" class="hover:text-indigo-200">Inicio</a>
+        <a href="#" class="hover:text-indigo-200">Productos</a>
+        <a href="#" class="hover:text-indigo-200">Nosotros</a>
+        <a href="#" class="hover:text-indigo-200">Contacto</a> -->
+            </div>
+
+            <!-- Botón móvil -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1 bg-indigo-500">
+        <a routerLink="login" class="block px-3 py-2 rounded hover:bg-indigo-400">Join</a>
+        <a routerLink="register" class="block px-3 py-2 rounded hover:bg-indigo-400">Register</a>
+        <!-- <a routerLink="register" class="block px-3 py-2 rounded hover:bg-indigo-400">Productos</a>
+    <a routerLink="register" class="block px-3 py-2 rounded hover:bg-indigo-400">Nosotros</a>
+    <a routerLink="register" class="block px-3 py-2 rounded hover:bg-indigo-400">Contacto</a> -->
+    </div>
+</nav>
+
+<script>
+    // Toggle menú móvil
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
