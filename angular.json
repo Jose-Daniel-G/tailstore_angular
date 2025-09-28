@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/carrito-compras",
-            "baseHref": "/AngularAdvengers/",
+            "baseHref": "/tailstore_angular/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -93,17 +93,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-           "options": {
-            "dir": "dist/carrito-compras", 
-            "baseHref": "/AngularAdvengers/" 
-          },
-          "configurations": {
-            "v2": {
-              "baseHref": "/AngularAdvengers/v2/",
-              "destination": "v2"
-            }
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

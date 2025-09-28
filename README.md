@@ -1,4 +1,4 @@
-[![See Demo own project](https://img.shields.io/badge/-Ver%20Demo-informational?style=flat&logo=github&link=https://jose-daniel-g.github.io/AngularAdvengers/)](https://jose-daniel-g.github.io/AngularAdvengers/)
+[![See Demo own project](https://img.shields.io/badge/-Ver%20Demo-informational?style=flat&logo=github&link=https://jose-daniel-g.github.io/tailstore_angular/)](https://jose-daniel-g.github.io/tailstore_angular/)
 
 - [🚀 See demo de Advengers](https://jose-daniel-g.github.io/AngularAdvengers/)
 - [🔥  See Project tutorial](https://jose-daniel-g.github.io/frontend-store/inicio)
@@ -49,7 +49,7 @@ npm install --save-dev @types/jquery
    - Ese es el **nombre de tu proyecto**.  
    - En la sección `build > options`, agrega (debajo de `outputPath`):  
      ```json
-     "baseHref": "/frontend-store/"
+     "baseHref": "/tailstore_angular/"
      ```
 ---
 
@@ -57,8 +57,8 @@ npm install --save-dev @types/jquery
    ```bash
    npm install -g @angular/cli
    ng add angular-cli-ghpages
-   ng build --configuration production --base-href "/AngularAdvengers/v2/"
-   ng deploy --base-href="/AngularAdvengers/v2/" --dir=v2
+   ng build --configuration production --base-href "/tailstore_angular/"
+   ng deploy --base-href="/tailstore_angular/" 
    ```
     ```json
     "styles": [
@@ -110,44 +110,3 @@ npm install @ngx-translate/core@latest @ngx-translate/http-loader@latest
 ng add @angular/localize
 
 ``` 
----
-###### Deploy Angular en GitHub Pages
-
-1. **Revisar el `angular.json`**  
-   - Ir a:  
-     ```json
-     "projects": { "frontend-store": {
-     ```
-   - Ese es el **nombre de tu proyecto**.  
-   - En la sección `build > options`, agrega (debajo de `outputPath`):  
-     ```json
-     "baseHref": "/frontend-store/"
-     ```
----
-
-2. **Instalar la herramienta de despliegue (si no está instalada)**  
-   ```bash
-   npm install -g @angular/cli
-   ng add angular-cli-ghpages
-   ng build --configuration production --base-href "/frontend-store/"
-   ng deploy --base-href=https://jose-daniel-g.github.io/Angular_adminlte/
-   ```
-   - De lo contrario si ya esta en angular.json configurado
-   ```bash
-   ng build --configuration production 
-   ng deploy
-
-   ```
-   *Configurar GitHub Pages en GitHub*
-
-   **Ir a tu repo en GitHub → Settings > Pages.**
-
-   - Seleccionar:
-
-   - Branch: gh-pages
-
-   - Folder: / (root)
-
-   - Guardar.
-
-npm install jquery bootstrap --save
